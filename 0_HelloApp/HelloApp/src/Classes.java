@@ -19,11 +19,15 @@ public class Classes {
     static class Person{
         String name;
         int age;
+        {
+            name = "Udfedined";
+            age = 18;
+        }
+
         Person(){
-            this("Undefined", 18);
         }
         Person(String name){
-            this(name,18);
+            this.name = name;
         }
         Person(String name, int age){
             this.name = name;
